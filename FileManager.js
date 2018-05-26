@@ -23,12 +23,12 @@ class FileManager{
 				},
 				'trk':{
 					'name' : "GoTouch GPX v1",
-					'trkseg': trackData
+					'trkseg': [trackData]
 				}
 			}
 		};
 		
-		fileManager.builder = new xml2js.Builder();
+		fileManager.builder = new xml2js.Builder({explicitArray: false});  
         var xmlBody = fileManager.builder.buildObject(fileManager.body);
 		fs.writeFile(fileManager.filename, xmlBody, function (err) {
   			if (err) throw err;

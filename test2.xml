@@ -16,8 +16,6 @@
           </gpxtpx:TrackPointExtension>
         </extensions>
       </trkpt>
-    </trkseg>
-    <trkseg>
       <trkpt lat="38.4340980" lon="-122.7151630">
         <ele>48</ele>
         <time>2016-08-28T13:03:35Z</time>
